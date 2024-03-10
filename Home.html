@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logotitle.jpg">
+
+</head>
+
+<body>
+    <!-- home-section -->
+    <section id="HOME">
+        <div class="Navbar">
+            <nav class="scrolled">
+                <div class="name">
+                    <h2>.Portfo<span style="color:rgb(166, 20, 20);">lio </span></h2>
+                </div>
+                <div class="navbtn">
+                    <ul>
+                        <li><a href="#HOME" class="btn active">Home</a></li>
+                        <li><a href="#About" class="btn">About</a></li>
+                        <li><a href="#Skills" class="btn">Skills</a></li>
+                        <li><a href="#Contact" class="btn">Contact Me</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+        </div>
+        <div class="my-info">
+            <div class="headingmy">
+                <h3 class="yourName" style="font-size: 23px;">Hey, I'm Priyanshu Chauhan</h3>
+                <h1>I enjoy designing website <br>and digital product</h1>
+                <a href="#Contact">Get in touch</a>
+            </div>
+            <div class="myimage">
+                <img src="/public/menimage.jpg" alt="myimage">
+            </div>
+        </div>
+    </section>
+    <!-- -----------------about----------------------- -->
+    <section id="About">
+        <h2 style="text-align: center;">About me</h2>
+        <hr class="abouthr">
+        <div class="aboutme">
+            <div class="Myphoto">
+                <img src="/public/myimage.png" alt="myimage">
+            </div>
+            <div class="myself">
+                <h1 style="color: white; font-size: 30px;">I'm Priyanshu Chauhan and I'm a <span
+                        style="color: rgb(196, 16, 16);"> web developer </span></h1>
+                <p>
+                    I am a versatile web and JavaScript developer, driven by a passion for creating innovative and
+                    seamless digital experiences. Armed with a robust skill set, I specialize in developing dynamic and
+                    visually appealing websites that prioritize both functionality and user engagement. Proficient in
+                    the latest web technologies, I am dedicated to staying at the forefront of industry trends. My
+                    expertise extends to crafting interactive interfaces and optimizing performance to deliver optimal
+                    user experiences. I thrive on tackling coding challenges and consistently seek out opportunities for
+                    professional growth. With a keen eye for detail and a commitment to excellence, I bring a unique
+                    blend of creativity and technical proficiency to every project, ensuring the delivery of
+                    high-quality, efficient, and impactful web solutions.
+                </p>
+                <a href="Resume_xt.docx" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------------Skills----------------------------------->
+    <section id="Skills">
+        <h2 style="text-align: center;">My skills</h2>
+        <hr class="skillhr">
+        <div class="myskills">
+            <div class="content">
+                <div class="hiddencontent">
+                    <img class="imges" src="/public/html-logo.png" alt="html">
+                    <h3 class="heading">HTML5</h3>
+                    <p>HTML (HyperText Markup Language) is the standard language for creating and designing web pages,
+                        defining their structure and content.</p>
+                </div>
+                <div class="hiddencontent">
+                    <img class="imges" src="/public/css-logo (2).png" alt="css">
+                    <h3 class="heading">CC3</h3>
+                    <p>CSS (Cascading Style Sheets) styles HTML documents, enhancing their appearance and layout,
+                        specifying colors, fonts, and design for web presentation.</p>
+                </div>
+                <div class="hiddencontent">
+                    <img class="imges" src="/public/javascript.png" alt="javascript">
+                    <h3 class="heading">Javascript</h3>
+                    <p>JavaScript is a versatile programming language for web development, enabling dynamic and
+                        interactive behavior in browsers, enhancing user experience.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="hiddencontent">
+                    <img class="imges" src="/public/nodejs.png" alt="node-js">
+                    <h3 class="heading">Node js</h3>
+                    <p>Node.js is a server-side JavaScript runtime that allows developers to build scalable and
+                        efficient network applications, leveraging asynchronous, event-driven programming.
+                    </p>
+                </div>
+                <div class="hiddencontent">
+                    <img class="imges" src="/public/mysql.png" alt="Mysql_logo">
+                    <h3 class="heading">Mysql</h3>
+                    <p>MySQL is an open-source relational database management system (RDBMS) that stores and manages
+                        structured data, commonly used for web applications.</p>
+                </div>
+                <div class="hiddencontent">
+                    <img class="imges" src="/public/java.jpg" alt="java">
+                    <h3 class="heading">Java</h3>
+                    <p>Java is a versatile, object-oriented programming language used for developing diverse
+                        applications, from web and mobile to enterprise systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------contact--------------------------------- -->
+    <section id="Contact">
+        <h1>Contact me</h1>
+        <hr class="skillhr">
+        <div class="contactme">
+            <form id="Myform">
+                <div id="message"></div>
+                <input type="text" class="input" placeholder="First name" name="firstname" id="firstname">
+                <input type="text" class="input" placeholder="Last name" name="lastname" id="lastname"><br>
+                <input type="text" class="input2" placeholder="Your email address" name="email" id="email"><br>
+                <input type="text" class="input2" style="margin-bottom: 8px;" placeholder="Mobile" name="mobile"
+                    id="mobile"><br>
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="How may I help you?"
+                    id="text"></textarea><br>
+                <input class="inputbtn" type="submit" value="Send" id="submitbtn">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© Copyright 2024 PortfolioDesign All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7c7cbe0fcf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

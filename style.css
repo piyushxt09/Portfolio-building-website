@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    z-index: 4;
+    position: fixed;
+    padding: 10px 0px;
+    /* background-color: black; */
+    align-items: center;
+    width: 100vw;
+    transition: 0.2s;
+    /* justify-content: space-around; */
+}
+
+nav.scrolled {
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.fa-bars{
+    visibility: hidden;
+}
+nav .name {
+    margin-left: 20px;
+}
+
+nav .name h2 {
+    font-size: 25px;
+}
+
+nav .navbtn {
+    margin-left: 100px;
+    padding: 10px;
+}
+
+nav .navbtn ul {
+    display: flex;
+    /* cursor: pointer; */
+}
+
+nav .navbtn ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav .navbtn ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+nav .navbtn ul li a:hover {
+    color: rgb(68, 143, 208);
+    cursor: pointer;
+}
+
+nav .navbtn ul li a.active {
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(200, 17, 17);
+}
+
+.my-info {
+    /* border: 1px solid red; */
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-60%, -20%);
+    padding: 10px;
+}
+
+.my-info .headingmy h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+.my-info .headingmy a {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 10px 0px;
+    color: white;
+    /* border: none; */
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.my-info .headingmy a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.my-info .myimage img {
+    width: 700px;
+    height: auto;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgb(215, 219, 225);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 20px;
+
+}
+
+
+/* ---------------------about----------------------------- */
+#About {
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    height: 650px;
+    transform: translate(-60%, -0%);
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 97vw;
+    border-radius: 6px;
+}
+
+#About .abouthr {
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -0%)
+}
+
+#About h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.aboutme {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    width: 100vw;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.aboutme .Myphoto img {
+    width: 500px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.aboutme .myself p {
+    font-size: 20px;
+    margin-top: 0px;
+    width: 750px;
+    text-align: left;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.aboutme .myself a {
+    color: black;
+    margin-top: 13px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.aboutme .myself a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* ------------------------------------------skills-------------------------------------------- */
+
+#Skills {
+    position: absolute;
+    top: 200%;
+    left: 60%;
+    transform: translate(-60%, -0%);
+    transition: 1s;
+}
+
+#Skills h2 {
+    font-size: 40px;
+}
+
+#Skills .skillhr {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    width: 200px;
+    color: black;
+    border: 1px solid black;
+}
+
+.myskills {
+    margin-top: 20px;
+    border-radius: 6px;
+    width: 97vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hiddencontent {
+    /* border: 1px solid red; */
+    margin: 10px 50px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.hiddencontent:hover .imges {
+    width: 100px;
+    height: 100px;
+}
+
+.myskills .content {
+    display: flex;
+    transition: 0.4s;
+    overflow-y: hidden;
+
+}
+
+.heading {
+    text-align: center;
+    position: relative;
+    top: -30px;
+    display: none;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.heading.active {
+    display: block;
+}
+
+.myskills .content p {
+    font-size: 14px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: -30px;
+    height: 300px;
+    display: none;
+}
+
+.myskills .content img {
+    width: 200px;
+    border-radius: 8px;
+    height: 200px;
+    margin: 30px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.7s;
+}
+
+/* --------------------------------------contact-------------------------------------- */
+
+#Contact {
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 320%;
+    /* border-radius: 6px; */
+    left: 60%;
+    transform: translate(-60%, -0%);
+    width: 100vw;
+    height: 90vh;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+#Contact h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Contact hr {
+    border: 1px solid white;
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+#Myform {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#Myform .input {
+    width: 180px;
+    height: 30px;
+    padding: 10px;
+    margin: 0px 4px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    outline: 1px solid lightcyan;
+    background-color: rgb(240, 240, 239);
+}
+
+#Myform .input2 {
+    margin-top: 8px;
+    width: 392px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    outline: 1px solid lightcyan;
+    background-color: rgb(240, 240, 239);
+
+}
+
+#Myform textarea {
+    width: 393px;
+    height: 180px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+    border: none;
+    outline: 1px solid lightcyan;
+    background-color: rgb(240, 240, 239);
+}
+
+#Myform .inputbtn {
+    width: 415px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8px;
+}
+
+#Myform .inputbtn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#message {
+    color: rgb(201, 38, 38);
+    /* background-color: rgb(220, 183, 21); */
+    padding: 10px;
+    margin-bottom: 4px;
+    width: 394px;
+    border-radius: 3px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    text-align: center;
+}
+
+/* ----------------------footer---------------------- */
+
+footer {
+    position: absolute;
+    top: 410%;
+    border-radius: 6px;
+    left: 60%;
+    transform: translate(-59%, -0%);
+    width: 100vw;
+    /* color: white;
+    background-color: rgb(188, 15, 15); */
+}
